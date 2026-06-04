@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <strong>صفحة هبوط احترافية وسريعة الاستجابة (Responsive Landing Page) لمتجر "ورد أكتوبر" المتخصص في بيع بوكسات المناسبات الفاخرة والهدايا.</strong>
+  <strong>A premium, fully responsive landing page built for "Ward October", specializing in luxury occasion boxes and premium flower arrangements.</strong>
 </p>
 
 <p align="center">
@@ -17,44 +17,44 @@
 
 ---
 
-## 📸 نظرة عامة على المشروع (Project Preview)
+## 📸 Project Preview
 
-> يمكنك رؤية لقطة شاشة كاملة للتصميم المتناسق لصفحة الهبوط كما هو موضح أدناه:
+> Experience the clean, pixel-perfect responsiveness of the landing page across desktop and mobile devices seamlessly.
 
-<p align="center">
-  <img src="screencapture-127-0-0-1-5502-2026-06-04-17_23_21.jpg" alt="Ward October Landing Page Screenshot" width="500px" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-</p>
-
----
-
-## ✨ المميزات الرئيسية (Key Features)
-
-* 📱 **متجاوب بالكامل (Fully Responsive):** مخصص ومعدل بدقة ليعمل بسلاسة على شاشات الموبايل، التابلت، وأجهزة الكمبيوتر (Desktop).
-* 🎯 **Typography مرن (Fluid Typography):** استخدام دالة `clamp()` لضبط خطوط العناوين تلقائياً حسب حجم الشاشة دون تكدس بصري.
-* 🛍️ **CTA مُحسّن:** أزرار طلب مباشر وسريعة عبر الواتساب واضحة وموزعة بشكل استراتيجي لزيادة نسبة التحويل (Conversion Rate).
-* 📄 **نموذج طلب متكامل (Lead Form):** سيكشن مخصص لجمع بيانات العملاء (الاسم، الجوال، العنوان) قبل الشحن بشكل منظم.
-* 🎠 **مستعرض آراء العملاء (Testimonials Slider):** سيكشن تفاعلي متحرك لعرض تقييمات العملاء الحقيقية باستخدام مكتبة **Swiper.js**.
-* ⚡ **أداء سريع ونظيف (Clean Code):** كود مهيكل ومطابق لمعايير الـ SEO وسرعة التحميل مع تنظيف الهوامش والأسطر.
+| 💻 Desktop View (MacBook) | 📱 Mobile View (iPhone 14 Pro Max) |
+| :---: | :---: |
+| <img src="img/Bildschirmfoto 2026-06-04 um 5.29.48\342\200\257PM.png" alt="Desktop Interface" width="100%" style="border-radius: 8px;"> | <img src="img/iPhone-14-PRO-MAX-127.0.0.1.png" alt="Mobile Interface" width="260px" style="border-radius: 8px;"> |
 
 ---
 
-## 🛠️ التقنيات المستخدمة (Technologies Used)
+## ✨ Key Features
 
-* **HTML5:** لبناء الهيكل الأساسي للصفحة والمحتوى بشكل دلالي (Semantic HTML).
-* **CSS3:** لتنسيق الألوان، الخلفيات، الطبقات الشفافة، وإضافة الـ Fluid Typography والتأثيرات الحركية (Hover effects).
-* **Bootstrap 5:** لضمان تقسيم شبكي مرن (Grid System) لبطاقات المنتجات والسيكشنز.
-* **JavaScript & jQuery:** لإدارة تفاعلية الصفحة وتهيئة أدوات العرض.
-* **Swiper.js:** لبناء معرض وسلايدر آراء العملاء التفاعلي المتجاوب مع اللمس.
+* 📱 **Fully Responsive Layout:** Precision-tuned for a seamless user experience across Mobile, Tablet, and Desktop screens.
+* 🎯 **Fluid Typography:** Implemented the modern CSS `clamp()` function, allowing headers to rescale smoothly without breaking layouts on smaller break-points.
+* 🛍️ **Conversion-Optimized CTA:** Strategic placement of high-contrast WhatsApp order buttons designed to maximize customer inquiries.
+* 📄 **Integrated Lead Capture:** A clean, user-friendly form section engineered to collect essential client delivery details dynamically.
+* 🎠 **Dynamic Testimonials Slider:** An interactive, touch-friendly feedback carousel powered by **Swiper.js** showcasing genuine WhatsApp reviews.
+* ⚡ **Production-Ready Architecture:** Clean, semantic HTML structure combined with modern CSS reset practices to ensure lightning-fast load speeds.
 
 ---
 
-## 📂 هيكل المشروع (Project Structure)
+## 🛠️ Technologies Used
+
+* **HTML5:** Semantic structures ensuring solid SEO fundamentals and clean document hierarchy.
+* **CSS3:** Custom styles, dynamic transitions, smooth hover states, and standard modern layout mechanics.
+* **Bootstrap 5:** Leveraging the robust fluid grid system for multi-column product card alignments.
+* **JavaScript & jQuery:** Powering client-side interactions and plugin initializations.
+* **Swiper.js:** Handling mobile-first responsive touch slider swipe controls.
+
+---
+
+## 📂 Project Structure
 
 ```text
-├── img/                                 # مجلد الصور وأيقونات المنتجات
-│   ├── 001.jpg                          # صورة الخلفية الرئيسية (Hero Background)
-│   ├── 002.png                          # شعار المتجر الرئيسي
-│   └── [باقي صور المنتجات والآراء]
-├── index.html                           # ملف الهيكل الرئيسي للصفحة
-├── style.css                            # ملف التنسيقات النظيفة والميديا كويري
-└── screencapture-127-0-0-1-5502-2026-06-04-17_23_21.jpg # لقطة شاشة للمعاينة
+├── img/                                 # Assets, logos, and product mockups
+│   ├── 001.jpg                          # Hero section background banner
+│   ├── 002.png                          # Official company branding logo
+│   ├── Bildschirmfoto 2026-06-04...     # Desktop display preview image
+│   └── iPhone-14-PRO-MAX-127.0.0.1.png  # Mobile layout preview image
+├── index.html                           # Core semantic structure entry point
+└── style.css                            # Refactored stylesheet with custom media queries
