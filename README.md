@@ -51,10 +51,14 @@
 ## 📂 Project Structure
 
 ```text
-├── img/                                 # Assets, logos, and product mockups
-│   ├── 001.jpg                          # Hero section background banner
+├── .vscode/                             # Editor workspace settings
+├── img/                                 # Project visual assets and graphics
 │   ├── 002.png                          # Official company branding logo
-│   ├── Bildschirmfoto 2026-06-04...     # Desktop display preview image
+│   ├── desktop.png                      # Desktop preview image
 │   └── iPhone-14-PRO-MAX-127.0.0.1.png  # Mobile layout preview image
+├── README.md                            # Comprehensive project documentation
 ├── index.html                           # Core semantic structure entry point
-└── style.css                            # Refactored stylesheet with custom media queries
+├── jquery-3.3.1.min.js                  # Production jQuery dependency core library
+├── plugin.js                            # Custom dynamic scripts and slider initialization
+├── style.css                            # Refactored stylesheet with custom media queries
+└── thank.html                           # Post-submission redirection success page
