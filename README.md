@@ -21,7 +21,7 @@
 
 > Experience the clean, pixel-perfect responsiveness of the landing page across desktop and mobile devices seamlessly.
 
-| 💻 Desktop View (MacBook) | 📱 Mobile View (iPhone 14 Pro Max) |
+| 💻 Desktop View | 📱 Mobile View |
 | :---: | :---: |
 | <img src="img/desktop.png" alt="Desktop Interface" width="50%" style="border-radius: 8px;"> | <img src="img/iPhone-14-PRO-MAX-127.0.0.1.png" alt="Mobile Interface" width="50%" style="border-radius: 8px;"> |
 
