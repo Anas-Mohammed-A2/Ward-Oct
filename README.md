@@ -23,7 +23,7 @@
 
 | 💻 Desktop View (MacBook) | 📱 Mobile View (iPhone 14 Pro Max) |
 | :---: | :---: |
-| <img src="img/Bildschirmfoto 2026-06-04 um 5.29.48\342\200\257PM.png" alt="Desktop Interface" width="100%" style="border-radius: 8px;"> | <img src="img/iPhone-14-PRO-MAX-127.0.0.1.png" alt="Mobile Interface" width="260px" style="border-radius: 8px;"> |
+| <img src="img/desktop.png" alt="Desktop Interface" width="50%" style="border-radius: 8px;"> | <img src="img/iPhone-14-PRO-MAX-127.0.0.1.png" alt="Mobile Interface" width="50%" style="border-radius: 8px;"> |
 
 ---
 
