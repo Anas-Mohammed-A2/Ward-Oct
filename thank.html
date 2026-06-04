@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .thank {
+      position: relative;
+      height: 500px;
+    }
+    .thank h1 {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 65px;
+      color: #3e584b;
+      font-weight: bold;
+    }
+    @media screen and (max-width: 768px) {
+      .thank h1 {
+        position: absolute;
+        left: 50%;
+        font-weight: bold;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 45px;
+        color: #3e584b;
+        text-align: center;
+        line-height: 65px;
+      }
+      @media screen and (max-width: 992px) and (min-width: 768px) {
+        .thank h1 {
+          position: absolute;
+          left: 50%;
+          font-weight: bold;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 45px;
+          color: #3e584b;
+          text-align: center;
+          line-height: 65px;
+        }
+      }
+    }
+  </style>
+  <body>
+    <div class="thank">
+      <h1>تم تسجيل طلبك للمنتج بنجاح</h1>
+    </div>
+  </body>
+</html>

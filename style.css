@@ -1,0 +1,578 @@
+/* =========================================================================
+   1. GLOBAL STYLES & VARIABLES
+   ========================================================================= */
+   @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+   * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+   }
+   
+   :root {
+     --Color: #3e584b;
+     --scandColor: rgb(198, 84, 107);
+     --cardColor: #494949;
+     --whColor: #ffffff;
+     --fontFm: "Rubik", sans-serif;
+   }
+   
+   body {
+     direction: rtl;
+     min-height: 100vh;
+     font-family: var(--fontFm);
+     overflow-x: hidden;
+   }
+   
+   .Linkes img, 
+   .LinkesBuy img, 
+   .LinkesProduct img {
+     max-width: 100%;
+     height: auto;
+     display: inline-block;
+     transition: transform 0.2s ease;
+   }
+   
+   .Linkes img:hover, 
+   .LinkesBuy img:hover, 
+   .LinkesProduct img:hover {
+     transform: scale(1.03);
+   }
+   
+   
+   /* =========================================================================
+      2. HERO SECTION STYLES (SecHome) WITH OVERLAY EFFECT
+      ========================================================================= */
+   .SecHome {
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     background-image: url("img/001.jpg");
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding-bottom: 60px;
+     z-index: 1;
+   }
+   
+   .SecHome::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.38); 
+     z-index: -1;
+   }
+   
+   .SecHome .container {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     min-height: calc(100vh - 60px);
+   }
+   
+   .SecHome .homeDiv {
+     padding-top: 50px;
+   }
+   
+   .SecHome .homeDiv .HomeLogo {
+     width: 100px;
+   }
+   
+   .SecHome .homeDiv h1 {
+     color: var(--whColor); 
+     font-weight: bold;
+     font-size: clamp(40px, 5vw, 75px);
+     margin: 20px 0 10px 0;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+   }
+   
+   .SecHome .homeDiv h5 {
+     color: #ff335c; 
+     font-size: clamp(24px, 3.5vw, 45px);
+     font-weight: bold;
+     margin-bottom: 20px;
+     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+   }
+   
+   /* حل جذري وشامل لتباعد الأسطر العشوائي في الهيرو */
+   .SecHome .homeDiv .hero-span {
+     color: var(--whColor); 
+     font-size: clamp(18px, 2.5vw, 35px);
+     font-weight: 500;
+     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+     display: block; 
+     line-height: 1.3 !important; /* إجبار الارتفاع على أن يكون متلاحم وجميل */
+     margin: 2px 0 !important;
+     padding: 0 !important;
+   }
+   
+   .SecHome .Linkes {
+     position: absolute;
+     left: 50%;
+     bottom: 20px;
+     transform: translateX(-50%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     width: 100%;
+     max-width: 620px;
+     padding: 0 15px;
+     z-index: 10;
+   }
+   
+   .SecHome .Linkes img {
+     width: 280px;
+   }
+   
+   
+   /* =========================================================================
+      3. ABOUT BOX SECTION STYLES (secAboutBox)
+      ========================================================================= */
+   .secAboutBox .aboutBoxRight {
+     background-color: var(--scandColor);
+     text-align: center;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxhed {
+     font-size: clamp(28px, 4vw, 45px);
+     font-weight: bold;
+     color: var(--whColor);
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxDescibOne {
+     font-size: clamp(20px, 2.5vw, 28px);
+     font-weight: 600;
+     color: var(--whColor);
+     margin: 20px 0;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxDescibTwo {
+     font-size: clamp(18px, 2.5vw, 25px);
+     font-weight: 300;
+     color: var(--whColor);
+     margin: 20px 0;
+     line-height: 1.6;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxDescibTwo span {
+     font-weight: bold;
+     color: var(--whColor);
+   }
+   
+   .secAboutBox .aboutBoxRight .spam {
+     font-size: clamp(18px, 2.5vw, 25px);
+     font-weight: 400;
+     color: var(--whColor);
+     margin: 20px 0;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxRightbotom {
+     background-color: var(--Color);
+     padding: 40px 20px;
+     text-align: center;
+     width: 100%;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxRightbotom .footer-notice {
+     font-size: clamp(20px, 3vw, 30px);
+     font-weight: 500;
+     color: var(--whColor);
+     display: block;
+     margin-bottom: 20px;
+     line-height: 1.3 !important;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxRightbotom .LinkesBuy {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     gap: 15px;
+   }
+   
+   .secAboutBox .aboutBoxRight .aboutBoxRightbotom .LinkesBuy img {
+     width: 280px;
+   }
+   
+   .secAboutBox .aboutBoxLeft {
+     padding: 40px 20px;
+     background-color: #dedddb;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .secAboutBox .aboutBoxLeft img {
+     max-width: 85%;
+     height: auto;
+   }
+   
+   /* الكود الخاص بالتابلت والموبايل */
+   .secAboutBox .aboutBoxRightbotomTwo {
+     display: none;
+   }
+   
+   
+   /* =========================================================================
+      4. FORM SECTION STYLES (SecForm)
+      ========================================================================= */
+   .SecForm {
+     padding: 60px 0;
+   }
+   
+   .SecForm .divRightText {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   
+   .SecForm .divRightText h1 {
+     font-size: clamp(22px, 3vw, 32px);
+     font-weight: bold;
+     color: var(--Color);
+   }
+   
+   .SecForm .divRightText p {
+     font-size: clamp(16px, 2vw, 22px);
+     font-weight: 300;
+     color: black;
+     margin: 25px 0;
+     text-align: center;
+     line-height: 1.7;
+   }
+   
+   .SecForm .divRightText img {
+     max-width: 85%;
+     height: auto;
+   }
+   
+   .SecForm .divLeftForm {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .SecForm .divLeftForm form {
+     background-color: #c4cdc8;
+     width: 100%;
+     max-width: 500px;
+     padding: 40px 25px;
+     border-radius: 10px;
+   }
+   
+   .SecForm .divLeftForm form h2 {
+     color: #000000;
+     font-size: clamp(18px, 2.5vw, 24px);
+     font-weight: 400;
+     text-align: center;
+     margin-bottom: 25px;
+     line-height: 1.5;
+   }
+   
+   .SecForm .divLeftForm form input:not([type="submit"]) {
+     outline: none;
+     border: none;
+     background-color: #ffffff;
+     color: var(--Color);
+     margin-bottom: 15px;
+     width: 100%;
+     height: 55px;
+     padding: 0px 20px;
+     font-size: 18px;
+     border-radius: 10px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+   }
+   
+   .SecForm .divLeftForm form input:focus {
+     border: 3px solid var(--scandColor);
+     box-shadow: 0 4px 12px rgba(198, 84, 107, 0.25);
+   }
+   
+   .SecForm .divLeftForm .btnform {
+     outline: none;
+     border: none;
+     background-color: var(--scandColor);
+     color: white;
+     margin-top: 10px;
+     width: 100%;
+     height: 65px;
+     font-size: 24px;
+     border-radius: 10px;
+     font-weight: 500;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+   }
+   
+   .SecForm .divLeftForm .btnform:hover {
+     background-color: rgb(175, 70, 92);
+   }
+   
+   
+   /* =========================================================================
+      5. PRODUCT FEATURES SECTION STYLES (secAboutPro)
+      ========================================================================= */
+   .secAboutPro {
+     background-color: var(--Color);
+     padding: 60px 0;
+   }
+   
+   .secAboutPro .rowText {
+     text-align: center;
+   }
+   
+   .secAboutPro .rowText h1 {
+     color: var(--whColor);
+     font-size: clamp(24px, 3.5vw, 36px);
+     font-weight: bold;
+   }
+   
+   .secAboutPro .rowText span {
+     color: var(--whColor);
+     font-size: clamp(18px, 2.5vw, 25px);
+     font-weight: 300;
+     margin-top: 15px;
+     display: block;
+   }
+   
+   .secAboutPro .cardPro {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     text-align: center;
+     padding: 25px 15px;
+     border-radius: 12px;
+     height: 100%; 
+     transition: transform 0.3s ease;
+   }
+   
+   .secAboutPro .cardPro:hover {
+     transform: translateY(-5px);
+   }
+   
+   .secAboutPro .cardPro img {
+     max-width: 100%;
+     width: 260px;
+     height: auto;
+     border-radius: 10px;
+   }
+   
+   .secAboutPro .cardPro h3 {
+     margin-top: 20px;
+     color: var(--whColor);
+     font-size: 22px;
+     font-weight: 600;
+   }
+   
+   .secAboutPro .cardPro span {
+     color: #e2ebd5;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.6;
+     margin-top: 8px;
+   }
+   
+   .secAboutPro .LinkesProduct {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 40px;
+   }
+   
+   .secAboutPro .LinkesProduct img {
+     width: 250px;
+   }
+   
+   
+   /* =========================================================================
+      6. TESTIMONIALS SLIDER SECTION STYLES (EndSec)
+      ========================================================================= */
+   .EndSec {
+     padding: 60px 0;
+     text-align: center;
+   }
+   
+   .EndSec h1 {
+     font-size: clamp(24px, 3.5vw, 35px);
+     font-weight: bold;
+     color: var(--Color);
+     margin-bottom: 40px;
+   }
+   
+   .swiper {
+     padding-bottom: 30px !important;
+   }
+   
+   .swiper-slide {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .swiper-slide img {
+     max-width: 260px;
+     height: auto;
+     border-radius: 10px;
+   }
+   
+   .EndSec .LinkesProduct {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 20px;
+     margin-top: 40px;
+   }
+   
+   .EndSec .LinkesProduct img {
+     width: 250px;
+   }
+   
+   
+   /* =========================================================================
+      7. RESPONSIVE BREAKPOINTS (Media Queries)
+      ========================================================================= */
+   
+   /* Tablets & Mobile Screen Master Optimization (max-width: 991.98px) */
+   @media screen and (max-width: 991.98px) {
+     
+     .SecHome {
+       background-image: url("img/001-1.jpg");
+       height: auto;
+       min-height: 100vh;
+       padding: 50px 0;
+     }
+     
+     .SecHome::before {
+       background: rgba(0, 0, 0, 0.52); 
+     }
+   
+     .SecHome .container {
+       justify-content: center;
+       gap: 35px;
+     }
+     
+     .SecHome .row {
+       justify-content: center;
+     }
+     
+     .SecHome .homeDiv {
+       text-align: center;
+       padding-top: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+     }
+   
+     /* تصغير وتثبيت العناوين في التابلت والموبايل */
+     .SecHome .homeDiv h1 {
+       font-size: 32px !important; 
+       margin: 15px 0 8px 0;
+     }
+   
+     .SecHome .homeDiv h5 {
+       font-size: 22px !important; 
+       margin-bottom: 15px;
+     }
+   
+     /* منع تفكك أسطر الـ span في الهيرو تماماً */
+     .SecHome .homeDiv .hero-span {
+       font-size: 18px !important;
+       line-height: 1.3 !important; /* إرجاع التلاحم للسطور */
+       margin: 2px 0 !important;
+     }
+   
+     /* تحويل الأزرار السفلية لوضع ثابت */
+     .SecHome .Linkes {
+       position: static;
+       transform: none;
+       flex-direction: column;
+       gap: 12px;
+       margin: 25px auto 0 auto;
+     }
+     
+     .SecHome .Linkes img {
+       width: 240px;
+     }
+   
+     /* About Box Controls */
+     .secAboutBox .aboutBoxRight .aboutBoxRightbotom {
+       display: none;
+     }
+     
+     .secAboutBox .aboutBoxRightbotomTwo {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       background-color: var(--Color);
+       padding: 40px 20px;
+       text-align: center;
+     }
+     
+     /* حل المشكلة المرصودة في الصورة لـ Footer التابلت والموبايل (إلغاء تباعد الأسطر) */
+     .secAboutBox .aboutBoxRightbotomTwo .footer-notice {
+       font-size: 22px !important;
+       font-weight: 500;
+       color: var(--whColor);
+       margin-bottom: 20px;
+       display: block;
+       line-height: 1.3 !important; /* قفل المسافات الكبيرة نهائياً */
+       padding: 0 !important;
+     }
+     
+     .secAboutBox .aboutBoxRightbotomTwo .LinkesBuy {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap: 15px;
+       width: 100%;
+     }
+     
+     .secAboutBox .aboutBoxRightbotomTwo .LinkesBuy img {
+       width: 250px;
+     }
+   }
+   
+   /* Specific Mobile Layout Tuning (max-width: 767.98px) */
+   @media screen and (max-width: 767.98px) {
+     .secAboutBox .aboutBoxRightbotomTwo .LinkesBuy,
+     .secAboutPro .LinkesProduct,
+     .EndSec .LinkesProduct {
+       flex-direction: column;
+       gap: 12px;
+     }
+     
+     .secAboutBox .aboutBoxRightbotomTwo .LinkesBuy img,
+     .secAboutPro .LinkesProduct img,
+     .EndSec .LinkesProduct img {
+       width: 220px;
+     }
+     
+     .SecForm .divRightText img {
+       margin-bottom: 30px;
+     }
+   }
+   
+   /* Ultra Large Screens Optimization */
+   @media screen and (min-width: 1600px) {
+     .secAboutBox .aboutBoxRight {
+       padding-top: 80px;
+     }
+     .secAboutBox .aboutBoxRight .aboutBoxhed {
+       font-size: 55px;
+     }
+     .secAboutBox .aboutBoxRight .aboutBoxDescibOne {
+       font-size: 35px;
+     }
+     .secAboutBox .aboutBoxRight .aboutBoxDescibTwo,
+     .secAboutBox .aboutBoxRight .spam {
+       font-size: 30px;
+     }
+   }
